@@ -28,6 +28,9 @@ describe('4 - Implemente os casos de teste para a função `circle`', () => {
     // Teste se circle retorna undefined, caso o parâmetro passado não seja um número.
     expect(circle('30')).toBeUndefined()
     // Teste se circle retorna um objeto.
+    const objeto = circle(1)
+    expect(typeof objeto).toBe('object')
+
     expect(circle(1)).toEqual({radius: 1, area: 3.14, circumference: 6.28})
     // Teste se o objeto retornado possui 3 propriedades.
     const value =  circle(1);
