@@ -28,6 +28,4 @@ const vqv = (name, age) => {
   + '#VQV!';
 };
 
-console.log(vqv())
-
 module.exports = vqv;
