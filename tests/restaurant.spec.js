@@ -46,6 +46,10 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
     // 2: Verifique se 'objetoRetornado.fetchMenu()' retorna um objeto cujas chaves são somente `food` e `drink`, 
     // considerando que a função createMenu() foi chamada com o objeto: `{ food: {}, drink: {} }`.
 
+    expect(menu.fetchMenu()).toHaveProperty('food');
+    expect(menu.fetchMenu()).toHaveProperty('drink');
+    
+
     // 3: Verifique se o menu passado pra função createMenu() é idêntico ao menu recuperado pela função 'objetoRetornado.fetchMenu()'.
 
     // 4: Faça a implementação do item 4 do README no arquivo src/restaurant.js.
