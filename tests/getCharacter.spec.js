@@ -44,9 +44,10 @@ Retorno:
 
 describe('9 - Implemente os casos de teste da função `getCharacter`', () => {
   it('Verifica se a função `getCharacter` retorna o objeto do personagem corretamente.', () => {
-    fail('Teste vazio!');
+    // fail('Teste vazio!');
     // ESCREVA SEUS TESTES ABAIXO:
     // 1. Teste se a função, quando não recebe nenhum parâmetro, retorna undefined.
+    expect(getCharacter()).toBeUndefined()
     // 2. Teste se a função retorna o objeto correto para o parâmetro 'Arya',
     // 3. Teste se a função retorna o objeto correto para o parâmetro 'Brienne',
     // 4. Teste se a função retorna o objeto correto para o parâmetro 'Melissandre',
