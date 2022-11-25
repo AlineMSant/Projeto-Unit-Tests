@@ -58,5 +58,6 @@ describe('9 - Implemente os casos de teste da função `getCharacter`', () => {
     expect(getCharacter('ARYA')).toEqual({ name: 'Arya Stark', class: 'Rogue', phrases: [ 'Not today', 'A girl has no name.' ] })
     expect(getCharacter('ArYa')).toEqual({ name: 'Arya Stark', class: 'Rogue', phrases: [ 'Not today', 'A girl has no name.' ] })
     // 6. Teste se ao passar um nome que não está na tabela, a função retorna undefined.
+    expect(getCharacter('aline')).toBeUndefined()
   });
 });
