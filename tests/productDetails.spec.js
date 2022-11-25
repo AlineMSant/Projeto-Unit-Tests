@@ -58,8 +58,14 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     }
 
     expect(return2).toBe(2)// a variavel return2 deve retornar 2 pois o for vai conferir se as posições possuem objetos e somar +1 toda vez que essa condição foi verdadeira. 
-    
+
     // Teste se quando passado parâmetros diferentes entre si, os dois objetos também são diferentes entre si.
+    let elementIsDifferent;
+    if (resultado[0] !== resultado[1]) {
+    elementIsDifferent = true;
+    }
+
+    expect(elementIsDifferent).toBe(true)
     // Teste se os dois productIds terminam com 123.
   });
 });
