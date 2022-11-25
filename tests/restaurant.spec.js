@@ -52,6 +52,9 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
 
     // 3: Verifique se o menu passado pra função createMenu() é idêntico ao menu recuperado pela função 'objetoRetornado.fetchMenu()'.
 
+    expect(menu).toStrictEqual(menu.fetchMenu())
+    
+
     // 4: Faça a implementação do item 4 do README no arquivo src/restaurant.js.
 
     // 5: Verifique se 'objetoRetornado.consumption', após a criação do menu, retorna um array vazio.
