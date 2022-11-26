@@ -44,6 +44,7 @@
 const createMenu = (obj) => {
   const object = {
     fetchMenu: () => obj,
+    consumption: [],
   };
   return object;
 };

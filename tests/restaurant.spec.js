@@ -62,7 +62,7 @@ describe('10 - Implemente a função `createMenu`, bem como seus casos de teste'
 
     // 5: Verifique se 'objetoRetornado.consumption', após a criação do menu, retorna um array vazio.
 
-    expect(menu.comsuption()).toEqual([]);
+    expect(menu.consumption).toEqual([]);
 
     // 6: Faça a implementação do item 6 do README no arquivo src/restaurant.js.
     
