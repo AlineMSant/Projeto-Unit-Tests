@@ -48,6 +48,11 @@ const createMenu = (obj) => {
   return object;
 };
 
+const teste = createMenu({ food: { coxinha: 3.9, sopa: 9.9 }, drink: { agua: 3.9, cerveja: 6.9 } });
+
+console.log(teste.fetchMenu());
+console.log(teste);
+
 // Faça o item 5 no arquivo tests/restaurant.spec.js
 
 // 6: Adicione ao objeto retornado por `createMenu()` uma chave de nome `consumption` que, como valor inicial, tem um array vazio.
